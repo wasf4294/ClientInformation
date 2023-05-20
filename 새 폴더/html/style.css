@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body    {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.5em;
+    margin: 0;
+    font-weight: 300;
+    color: #222;
+
+    background-color: #e4e4e4;
+
+    /* 센터링 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+a{
+    text-decoration: none;
+}
+
+.item   {
+    width: 300px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.item input{
+    border: 1px solid lightgray;
+    height: 40px;
+    width: inherit;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    outline: none;
+    transition: 0.2s;
+}
+.item .fa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: gray;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.item input:focus {
+    border: 1px solid darkgray;
+    box-shadow: 0 0 5px grey;
+}
+.item input:focus + .fa {
+    color: rgb(34, 34, 34);
+}
+.item input:focus::placeholder  {
+    visibility: hidden;
+}
